@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+</head>
+
+<body>
+
+    <header>
+        <h1 class="titulo"> <img  src="imagenes/Vector.png">  Encriptador de texto</h1>
+
+    </header>
+
+    <main>
+        <section class="box-principal">
+            
+            <div class="box-encriptar">
+                <textarea   cols="45" rows="15" id="texto-encriptar" class="texto-encriptar" required placeholder="Ingrese el texto que deseé encriptar "></textarea>
+            </div>
+
+            <div class="box-desencriptar">
+                <div class="texto-boxdesencriptar" id="texto-boxdesencriptar">
+                    <img class="imagen-buscando" src="imagenes/buscando.png" id="imagen-buscando" alt=" Imagen buscando">
+                    <h2 id="texto-noencontrado" class="texto-noencontrado">Ningún mensaje <br> fué encontrado</h2>
+                    
+                </div>
+                <div>
+                    
+                    <textarea   cols="45" rows="15" id="texto-desencriptar" class="texto-desencriptar" required ></textarea>
+                </div>
+                
+
+            </div>
+
+            
+        </section>
+        
+             
+
+        <section class="alerta">
+
+            </div>
+            <div class="texto-condicion">
+                <p></p><img class="logo-alerta" src="imagenes/alerta.png">Sólo letras minúsculas y sin acentos</p>
+
+            </div>
+        </section>
+      
+        <section class="box-botones">
+            <div class="botones">
+                <input type="button" class="boton-encriptar" id="boton-encriptar" value="Encriptar">  
+                                           
+                <input type="button" class="boton-copiar" id="boton-copiar"
+                value="Copiar">
+
+                <input type="button" class="boton-limpiar" id="boton-limpiar"
+                value="Limpiar">
+
+                <input type="button" class="boton-desencriptar" id="boton-desencriptar" value="Desencriptar">
+
+                
+            </div>
+         
+        </section>
+
+        
+    
+    </main>
+
+    <footer>
+
+        <section>
+            <div class="imagenes">
+                <a title="Github" href="https://github.com/NayeCL"> <img class="logo-git" src="imagenes/git.png" alt="Github"> </a>
+                <a title="LinkedIn" href="https://www.linkedin.com/in/nayelli-clavellina/>"> <img class="logo-linked" src="imagenes/linkedin.png" alt="linkedin"> </a>
+            </div>
+            <div>
+                <marquee class="copyright"> &copy Desarrollado por Nayelli Clavellina - 2023</marquee>
+    
+            </div>
+
+        </section>
+        
+    </footer>
+    
+</body>
+
+<script src="script.js"></script>
+
+</html>
+
+        

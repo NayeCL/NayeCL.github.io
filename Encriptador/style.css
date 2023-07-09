@@ -1,0 +1,266 @@
+main{
+    position: relative;
+}
+
+
+body{
+    background-image: url(imagenes/fondo1.jpg);
+
+}
+
+header{
+    position:relative;
+    background-image: url(imagenes/cintillo.jpg);
+    background-position: center;
+    background-size:110% 90%;
+}
+
+.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:25px;
+    font-weight: bolder;
+    color:white;
+   
+    padding: 15px;
+    gap: 10px;
+
+}
+
+.box-principal{
+    border-radius: 32px;
+    display: flex;  
+}
+ 
+.box-encriptar{
+    padding: 15px;
+    margin: 5px 0 0 125px;
+    color:white;
+    
+        
+}
+
+.texto-encriptar{
+    
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15x;
+    text-align: center;
+    background-image: url(imagenes/box.jpg);
+    background-size:130% 111%;
+    background-position: center;
+    border: none;
+    border-radius:10%;
+    padding: 50px;
+    color: #ffffff;
+    
+    
+}
+
+.box-desencriptar{
+    
+    padding: 15px;
+    margin: 5px 0px 0px 70px;
+    color:white;
+    
+        
+}
+
+.texto-desencriptar{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15x;
+    text-align: center;
+    background-image: url(imagenes/box.jpg);
+    background-size:130% 111%;
+    background-position: center;
+    border: none;
+    border-radius:10%;
+    padding: 50px;
+    color: #ffffff;
+}
+
+
+.texto-boxdesencriptar{
+    position: absolute;
+    margin-top: 3%;
+    margin-left: 9%;
+}
+
+.imagen-buscando{
+    width: 50%;
+
+}
+
+.texto-noencontrado{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 3%;
+    margin-left: 5%;
+    
+}
+
+
+
+
+.logo-alerta{
+    width: 2%;
+    height: 2%;
+
+}
+
+.texto-condicion{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-family: 'Advent Pro', sans-serif;
+    color: beige;
+    text-align:left;
+    margin-left: 19%;
+   
+}
+
+
+.botones{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    margin-top: 20px;  
+  
+}
+
+.boton-encriptar, .boton-desencriptar, .boton-copiar, .boton-limpiar{
+    width: 15%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: rgb(192, 8, 131);
+    border: none;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px 2px #ffffff;
+    
+}
+
+.boton-encriptar:hover, .boton-desencriptar:hover, .boton-copiar:hover, .boton-limpiar:hover{
+    background:  rgb(136, 4, 92);;
+    transform: scale(1.1);
+}
+
+
+.imagenes{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 20px;
+    transition: 1s all;
+    cursor: pointer;
+    
+}
+
+.logo-git:hover, .logo-linked:hover{
+    transform: scale(1.5);
+
+}
+
+.copyright{
+    margin-top: 10px;
+    align-items:center;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+        
+
+}
+
+.logo-git{
+    position: relative;
+    width: 35px;
+    height: 35px;
+}
+
+.logo-linked{
+    position:relative;
+    width: 35px;
+    height: 35px;
+   
+}
+    
+    
+@media screen and (max-width:680px){
+    
+    header{
+        text-align: center;
+
+    }
+
+    .titulo{
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .box-principal{
+        display: flex;
+       flex-direction: column;
+              
+    }
+    .box-encriptar{
+        margin-left: 10%;
+    }
+
+    .box-desencriptar{
+        margin-left: 10%;
+    }
+
+    .texto-boxdesencriptar{
+        margin-left: 13%;
+        margin-top: 20%;
+    }
+
+    .texto-noencontrado{
+        font-size: 1.2em;
+       
+    }
+
+    .imagen-buscando{
+        width: 70%;
+    }
+    
+    .texto-encriptar{
+        width: 60%;
+       
+    }
+
+    .texto-desencriptar{
+        width: 60%;
+    }
+
+    
+    .botones{
+        gap: 20px;
+        
+    }
+    .boton-copiar, .boton-encriptar, .boton-desencriptar, .boton-limpiar{
+        width: auto;
+        padding: 10px 5px;
+        font-size: 12px;
+        font-weight: bold;
+        color: white;
+        background: rgb(192, 8, 131);
+        border: none;
+        border-radius: 10px;
+        transition: 1s all;
+        cursor: pointer;
+        box-shadow: 0px 0px 8px 1px #ffffff;
+    }
+
+.texto-condicion{
+    margin-left: 25%;
+}
+
+}
+
